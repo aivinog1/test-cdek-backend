@@ -1,0 +1,24 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="PostgresCDEK" type="docker-deploy" factoryName="dockerfile" server-name="Local Docker">
+    <deployment type="dockerfile">
+      <settings>
+        <option name="buildCliOptions" value="" />
+        <option name="command" value="" />
+        <option name="containerName" value="PostgresCDEK" />
+        <option name="entrypoint" value="" />
+        <option name="imageTag" value="" />
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="5433" />
+              <option name="hostPort" value="5432" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
+        <option name="commandLineOptions" value="" />
+        <option name="sourceFilePath" value="DockerfilePostgres" />
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>
