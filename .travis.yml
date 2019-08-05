@@ -1,0 +1,15 @@
+language: java
+sudo: false
+install:
+  - gem install pdd -v 0.20.5
+script:
+  - set -e
+  - pdd --file=/dev/null
+  - mvn verify
+env:
+  global:
+    - JAVA_OPTS="-Xmx256m"
+services: docker
+jdk:
+  - oraclejdk8
+dist: trusty
