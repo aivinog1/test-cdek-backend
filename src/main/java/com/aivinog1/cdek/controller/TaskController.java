@@ -3,10 +3,7 @@ package com.aivinog1.cdek.controller;
 import com.aivinog1.cdek.service.TaskDto;
 import com.aivinog1.cdek.service.TaskService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,7 +20,7 @@ public class TaskController {
     }
 
     @PutMapping("/create_new_task")
-    public void createNewTask(TaskDto taskDto) {
+    public void createNewTask(@RequestBody TaskDto taskDto) {
         taskService.createNewTask(taskDto);
     }
 }
